@@ -1,9 +1,59 @@
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   display: flex;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 318px;
+  padding: 5px;
+  margin: 0 auto;
+  background-color: #c6c6c6;
+  border: 5px solid white;
+  border-right-color: gray;
+  border-bottom-color: gray;
+}
+
+.game-header {
+  display: flex;
+  margin:  0 auto;
+  justify-content: space-between;
+  width: 230px;
+  height: 48px;
+  border: 5px solid gray;
+  border-right-color: white;
+  border-bottom-color: white;
+}
+
+.start-button {
+  width: 39px;
+  height: 39px;
+  margin: 5px auto;
+  background-image: url("./assets/icons/face_unpressed.svg");
+  background-position: center;
+  background-size: 39px 39px;
+}
+
+.start-button:active {
+  background-image: url("./assets/icons/face_pressed.svg");
+  background-position: center;
+  background-size: 39px 39px;
+}
+
+.win {
+  background-image: url("./assets/icons/face_win.svg");
+  background-position: center;
+  background-size: 39px 39px;
+}
+
+.lose {
+  background-image: url("./assets/icons/face_lose.svg");
+  background-position: center;
+  background-size: 39px 39px;
 }
 
 .field {
@@ -12,6 +62,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  border: 5px solid gray;
+  border-right-color: white;
+  border-bottom-color: white;
 }
 
 .cell {

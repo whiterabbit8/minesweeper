@@ -48,7 +48,7 @@ class Minesweeper {
   showField() {
     const field = document.createElement('div');
     field.className = 'field';
-    document.body.append(field);
+    document.querySelector('.game-wrapper').append(field);
     for (let i = 0; i < this.width; i++) {
       for (let j = 0; j < this.height; j++) {
         const cell = document.createElement('div');
@@ -61,9 +61,20 @@ class Minesweeper {
     }
   }
 
+  resetField() {
+    document.querySelector('.start-button').className = 'start-button';
+    this.matrix = this.createMatrix(this.width, this.height, this.mines);
+    this.field = this.createField();
+    const cells = document.querySelectorAll('.cell');
+    cells.forEach(cell => {
+      cell.className = 'cell closed';
+    });
+  }
+
   openCell(event) {
     const targetCell = event.target.closest('.closed');
     if (targetCell) {
+      console.log(targetCell);
       let x = Number(targetCell.getAttribute('x'));
       let y = Number(targetCell.getAttribute('y'));
       targetCell.classList.remove('closed');
@@ -117,6 +128,7 @@ class Minesweeper {
         }
       }
     }
+    this.checkWin();
   }
 
   setFlag(event) {
@@ -151,6 +163,35 @@ class Minesweeper {
       } else if (this.matrix[y][x] === 'wf') {
         cells[i].classList.add('mine-wrong');
       }
+    }
+    this.changeStatus('lose');
+  }
+
+  changeStatus(gameEvent) {
+    const status = document.querySelector('.start-button');
+    const closedCells = document.querySelectorAll('.closed');
+    switch(gameEvent) {
+      case 'win':
+        status.classList.add('win');
+        closedCells.classList.add('flag');
+        break;
+      case 'lose':
+        status.classList.add('lose');
+        break;
+    }
+  }
+
+  checkWin(matrix = this.matrix) {
+    let sum = 0;
+    for (let i = 0; i < this.height; i++) {
+      for (let j = 0; j < this.width; j++) {
+        if (matrix[i][j] === 1) {
+          sum += 1;
+        }
+      }
+    }
+    if (sum === this.width * this.height - this.mines) {
+      this.changeStatus('win');
     }
   }
 }
