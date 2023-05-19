@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.field {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 24px;
+  height: 24px;
+}
+
+.closed {
+  background: url("./assets/icons/closed.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.type0 {
+  background: url("./assets/icons/type0.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.type1 {
+  background: url("./assets/icons/type1.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.type2 {
+  background: url("./assets/icons/type2.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.type3 {
+  background: url("./assets/icons/type3.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.type4 {
+  background: url("./assets/icons/type4.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.type5 {
+  background: url("./assets/icons/type5.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.type6 {
+  background: url("./assets/icons/type6.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.type7 {
+  background: url("./assets/icons/type7.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.type8 {
+  background: url("./assets/icons/type8.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.flag {
+  background: url("./assets/icons/flag.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.mine {
+  background: url("./assets/icons/mine.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.mine-red {
+  background: url("./assets/icons/mine_red.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.flag {
+  background: url("./assets/icons/flag.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.mine-wrong {
+  background: url("./assets/icons/mine_wrong.svg");
+  background-position: center;
+  background-size: 24px 24px;
+}
