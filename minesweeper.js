@@ -102,28 +102,43 @@ class Minesweeper {
       }
     }
 
+    function isValid(y, x, field) {
+      let counter = 0;
+      if (field[y][x] !== 9) {
+        if (field[y - 1] && field[y - 1][x] === 0) counter++;
+        if (field[y][x + 1] === 0) counter++;
+        if (field[y][x - 1] === 0) counter++;
+        if (field[y + 1] && field[y + 1][x] === 0) counter++;
+      }
+      if (counter > 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
     function openNeighbourCell(y, x, field, matrix) {
       if (field[y - 1] && (!matrix[y - 1][x] || matrix[y - 1][x] === 'wf')) {
         matrix[y - 1].splice(x, 1, 1);
-        if (!field[y - 1][x]) {
+        if (isValid(y - 1, x, field)) {
           openNeighbourCell(y - 1, x, field, matrix);
         }
       }
       if (field[y][x + 1] !== undefined && (!matrix[y][x + 1] || matrix[y][x + 1] === 'wf')) {
         matrix[y].splice(x + 1, 1, 1);
-        if (!field[y][x + 1]) {
+        if (isValid(y, x + 1, field)) {
           openNeighbourCell(y, x + 1, field, matrix);
         }
       }
       if (field[y][x - 1] !== undefined && (!matrix[y][x - 1] || matrix[y][x - 1] === 'wf')) {
         matrix[y].splice(x - 1, 1, 1);
-        if (!field[y][x - 1]) {
+        if (isValid(y, x - 1, field)) {
           openNeighbourCell(y, x - 1, field, matrix);
         }
       }
       if (field[y + 1] && (!matrix[y + 1][x] || matrix[y + 1][x] === 'wf')) {
         matrix[y + 1].splice(x, 1, 1);
-        if (!field[y + 1][x]) {
+        if (isValid(y + 1, x, field)) {
           openNeighbourCell(y + 1, x, field, matrix);
         }
       }
@@ -173,7 +188,7 @@ class Minesweeper {
     switch(gameEvent) {
       case 'win':
         status.classList.add('win');
-        closedCells.classList.add('flag');
+        closedCells.forEach(cell => cell.classList.add('flag'));
         break;
       case 'lose':
         status.classList.add('lose');
