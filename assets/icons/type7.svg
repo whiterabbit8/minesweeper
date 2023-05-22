@@ -1,22 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25mm" height="25mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 1.48975 1.48975"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil2 {fill:black}
-    .fil0 {fill:gray}
-    .fil1 {fill:#c6c6c6}
-   ]]>
-  </style>
- </defs>
- <g id="Layer_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <rect class="fil0" width="1.48975" height="1.48975"/>
-  <rect class="fil1" x="0.0909428" y="0.0909428" width="1.39881" height="1.39881"/>
-  <path class="fil2" d="M0.316721 0.316602l0.928288 0 0 0.22913c0.00329533,0.0755781 -0.0147545,0.129817 -0.0424877,0.174366l-0.284519 0.523517c-0.0436259,0 -0.0872458,0 -0.130866,0 -0.0681472,-0.00123947 -0.0908331,-0.00288416 -0.0914529,-0.0621346 -0.00256833,-0.0471059 0.0102674,-0.0919236 0.0464922,-0.149881l0.186463 -0.324736c0.0189675,-0.0282576 0.0404855,-0.0672891 0.0380721,-0.121558l0 -0.0684213 -0.544588 0c-0.0520043,0.0012216 -0.105999,-0.0152908 -0.105582,-0.110742l0.00017877 -0.08954z"/>
- </g>
+<svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M94 0H0V94H94V0Z" fill="white"/>
+<path d="M87 5H7C5.89543 5 5 5.89543 5 7V87C5 88.1046 5.89543 89 7 89H87C88.1046 89 89 88.1046 89 87V7C89 5.89543 88.1046 5 87 5Z" fill="#F0EBE4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.0116 18H76.8888V32.5327C77.0978 37.3263 75.9529 40.7664 74.194 43.592L56.1482 76.7963C53.3812 76.7963 50.6146 76.7963 47.8479 76.7963C43.5257 76.7177 42.0868 76.6134 42.0475 72.8554C41.8846 69.8677 42.6987 67.0251 44.9963 63.3491L56.8228 42.7525C58.0258 40.9603 59.3906 38.4847 59.2375 35.0427V30.703H24.6967C21.3983 30.7805 17.9737 29.7332 18.0002 23.6791L18.0116 18Z" fill="black"/>
 </svg>

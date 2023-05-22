@@ -1,32 +1,31 @@
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   display: flex;
+  background-color: rgb(254, 247, 234);
 }
 
 .game-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 250px;
-  height: 318px;
+  gap: 5px;
   padding: 5px;
   margin: 0 auto;
-  background-color: #c6c6c6;
-  border: 5px solid white;
-  border-right-color: gray;
-  border-bottom-color: gray;
+  background-color: #F0EBE4;
+  border: 3px solid #C6C3BD;
+  border-radius: 3px;
+  border-top-color: #fff;
+  border-left-color: #fff;
 }
 
 .game-header {
   display: flex;
-  margin:  0 auto;
+  margin: 0 auto;
   justify-content: space-between;
-  width: 230px;
   height: 48px;
-  border: 5px solid gray;
-  border-right-color: white;
-  border-bottom-color: white;
 }
 
 .start-button {
@@ -57,14 +56,15 @@ body {
 }
 
 .field {
-  width: 240px;
-  height: 240px;
+  width: 246px;
+  height: 246px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  border: 5px solid gray;
-  border-right-color: white;
-  border-bottom-color: white;
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  border-top-color: #C6C3BD;
+  border-left-color: #C6C3BD;
 }
 
 .cell {
